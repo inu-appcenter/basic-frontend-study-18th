@@ -16,7 +16,7 @@
 
 |                                                     주민서                                                      |                                                     지원근                                                      |     |
 | :-------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------: | :-: |
-| <a href="https://github.com/"><img src="https://avatars.githubusercontent.com/u/266900286?v=4" width="120"></a> | <a href="https://github.com/"><img src="https://avatars.githubusercontent.com/u/266765839?v=4" width="120"></a> |     |
+| <a href="https://github.com/wnmxeo"><img src="https://avatars.githubusercontent.com/u/266900286?v=4" width="120"></a> | <a href="https://github.com/jigooiswon"><img src="https://avatars.githubusercontent.com/u/266765839?v=4" width="120"></a> |     |
 
 
 ## 커리큘럼
