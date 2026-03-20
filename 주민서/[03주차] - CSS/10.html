@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class&Element</title>
+</head>
+<style>
+    a{
+        font-size: 30px;
+    }
+    a:link {
+        color: cyan;
+    }
+    a:visited{
+        columns: red;
+    }
+    .field{
+        margin-bottom: 10px;
+    }
+    input:focus{
+        outline: none;
+    }
+</style>
+<body>
+    <fieldset>
+        <legend>Pseudo Class</legend>
+        <div>
+            <a href="https://naver.com">네이버</a>
+            <a href="https://kakao.com">카카오</a>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>focus,before,after</legend>
+        <div class="field">
+            <label for="name">이름</label>
+            <input type="text" id="name">
+        </div>
+        <div class="field">
+            <label for="age">나이</label>
+            <input type="text" id="age">
+        </div>
+        <button>보내기</button>
+    </fieldset>
+</body>
+</html>
