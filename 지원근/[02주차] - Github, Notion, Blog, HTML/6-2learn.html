@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width= , initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>input tag</legend>
+        <ul>
+          <li>
+            <label for="text">택스트</label>
+            <input
+              type="text"
+              id="text"
+              required
+              value="공란이 아님"
+              readonly
+            />
+          </li>
+          <li>
+            <label for="email">이메일</label>
+            <input type="email" id="email" required value="non" disabled />
+          </li>
+          <li>
+            <label for="tel">전화번호</label>
+            <input type="tel" id="tel" required autofocus />
+          </li>
+          <li>
+            <label for="url">URL</label>
+            <input
+              type="url"
+              id="url"
+              required
+              placeholder="URL을 입력하세요."
+            />
+          </li>
+          <li>
+            <label for="number">number</label>
+            <input type="number" id="number" required />
+          </li>
+        </ul>
+      </fieldset>
+      <input type="submit" value="제출하기" />
+    </form>
+  </body>
+</html>
