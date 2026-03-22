@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>display</title>
+  </head>
+  <style>
+    div,
+    h2 {
+      border: 1px solid red;
+      /* 요소 자체의 공간을 없애고 숨김 */
+      /* display: none; */
+      /* 요소의 공간은 남겨두고 숨김  */
+      /* visibility: hidden; */
+    }
+    span,
+    a {
+      border: 1px solid blue;
+    }
+    article > div,
+    article > span {
+      /* inline - block으로 지정해주면 
+      inline 특성이 적용되지만, width와 height로 크기를 지정할 수 있다 */
+      display: inline-block;
+      width: 100px;
+      height: 30px;
+    }
+  </style>
+  <body>
+    <h1>Display Block</h1>
+    <div>content</div>
+    <div>content</div>
+    <div>content</div>
+    <div>content</div>
+    <h2>title</h2>
+
+    <!-- 인라인 블록은 컨텐츠만큼만 영역을 차지하며, 가로로 배치됨-->
+    <h1>Inline Block</h1>
+    <span>content</span>
+    <span>content</span>
+    <span>content</span>
+    <span>content</span>
+    <a href="#">naver</a>
+
+    <article>
+      <h1>Block Tilte</h1>
+      <div>content</div>
+      <div>content</div>
+      <div>content</div>
+      <div>content</div>
+      <span>content</span>
+      <span>content</span>
+      <span>content</span>
+      <span>content</span>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>transform</title>
+  </head>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      background-color: gray;
+    }
+    .outline,
+    .box {
+      width: 60px;
+      height: 60px;
+    }
+    .outline {
+      border: 4px solid blue;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+    .box {
+      background-color: red;
+    }
+    .box1 {
+      transform: translate(30px, 20px);
+    }
+    .box2 {
+      transform: scale(3, 0.5);
+    }
+    .box3 {
+      transform: rotate(45deg);
+    }
+    /* .outline-box3 {
+      입체적으로 만들어서 원근감 표시 
+      perspective: 50px;
+    }  */
+
+    .box4 {
+      transform: skew(30deg, 30deg);
+    }
+    /* transition */
+    .box1 {
+      /* transition-property: width, height;
+      transition-duration: 1s; */
+      /* transition-delay: s; */
+      /* transition-timing-function: ease-out; */
+      transition: 2s 1s ease-out;
+    }
+    .box1:hover {
+      width: 200px;
+      height: 200px;
+      background-color: aqua;
+      transform: rotate(100deg);
+    }
+  </style>
+  <body>
+    <div class="outline">
+      <div class="box box1"></div>
+    </div>
+    <div class="outline">
+      <div class="box box2"></div>
+    </div>
+    <div class="outline outline-box3">
+      <div class="box box3"></div>
+    </div>
+    <div class="outline">
+      <div class="box box4"></div>
+    </div>
+  </body>
+</html>

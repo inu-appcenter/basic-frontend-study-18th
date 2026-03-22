@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Font stlye2</title>
+  </head>
+  <style>
+    .content {
+      border: 1px solid red;
+    }
+    .font-center {
+      text-align: center;
+    }
+    .font-right {
+      text-align: right;
+    }
+    .font-left {
+      text-align: left;
+    }
+    .article {
+      line-height: 2rem;
+      /* 줄간격 */
+      letter-spacing: 1px;
+      /* 글자간격 */
+      word-spacing: 10px;
+      /* 단어간격 */
+      text-indent: 80px;
+      /* 문단간격 */
+    }
+    .transform {
+      text-transform: uppercase;
+      /* 영어철자의 대소문자표현 지정 */
+    }
+    .article > a {
+      text-decoration: none;
+    }
+    .text-shadow {
+      text-shadow: 0px 5px 5px black;
+      /* 위치 픽셀 지정 가로 세로 번짐 */
+    }
+    ul {
+      list-style: none;
+    }
+  </style>
+  <body>
+    <section>
+      <p class="content font-center">text</p>
+      <p class="content font-right">text</p>
+      <p class="content font-left">text</p>
+    </section>
+    <section>
+      <p class="article">
+        비디오 플레이어는 기본 앱으로 뭘 쓰고 있는지 떴었는데 저는 윈도우
+        기본프로그램을 잘 사용하지 않고 비디오플레이어, 사진, 웹까지 전부 다
+        외부 프로그램을 설치해 사용중입니다^^;; [출처]
+        <span class="transform">Visual Studio Code</span>
+        <a href="#">(비주얼스튜디오코드)</a> 브라우저 설정 방법|작성자 희야
+        웹브라우저는 기본 앱으로 뭘 쓰고 있는지
+      </p>
+    </section>
+    <section>
+      <h2 class="text-shadow">앱센터 베이직 프론트엔드</h2>
+    </section>
+    <section>
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+      </ul>
+    </section>
+  </body>
+</html>

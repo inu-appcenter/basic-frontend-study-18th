@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>border</title>
+  </head>
+  <style>
+    .border {
+      width: 200px;
+      height: 200px;
+      border: 1px solid green;
+      border-top: 20px solid red;
+    }
+    .border_radius {
+      width: 200px;
+      height: 200px;
+      border: 1px solid darkcyan;
+      border-radius: 50%;
+    }
+    .content-box {
+      /* contents 박스의 width height는 내부 콘텐츠의 사이즈를 정해준다 */
+      width: 100px;
+      height: 100px;
+      border: 1px solid red;
+      margin: 10px;
+      padding: 30px;
+      box-sizing: content-box;
+    }
+    .border-box {
+      /* 보더박스는 보더박스 자체의 크기를 지정함 */
+      width: 100px;
+      height: 100px;
+      border: 1px solid blue;
+      margin: 10px;
+      padding: 30px;
+      box-sizing: border-box;
+    }
+  </style>
+  <body>
+    <div class="border"></div>
+    <div class="border_radius"></div>
+    <div class="content-box"></div>
+    <div class="border-box"></div>
+  </body>
+</html>
