@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>background</title>
+  </head>
+  <style>
+    .red {
+      background-color: red;
+      width: 100px;
+      height: 100px;
+    }
+    .image {
+      background-image: url('../assets/mongjisizechange.jpg');
+      background-repeat: repeat;
+      background-position: center;
+      width: 150px;
+      height: 400px;
+      border: 1px solid black;
+      margin: 10px;
+      display: inline-block;
+      overflow: scroll;
+    }
+    .attatchment-scroll {
+      /* 백그라운드 이미지에서만 고정 */
+      background-attachment: scroll;
+    }
+    .attatchment-fixed {
+      /* 웹페이지 내에 고정 */
+      background-attachment: fixed;
+    }
+    .attatchment-local {
+      background-attachment: local;
+    }
+    .background-size {
+      background-image: url(../assets/mongji2.jpg);
+      width: 300px;
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+    }
+    .linear-gradient {
+      width: 300px;
+      height: 200px;
+      background: linear-gradient(45deg, yellow 25%, red 35%, blue);
+    }
+    .radius-gradient {
+      width: 300px;
+      height: 200px;
+      background: radial-gradient(circle at 10%, red, blue, black);
+    }
+  </style>
+  <body>
+    <h3>background-color</h3>
+    <div class="red"></div>
+    <h3>background-image</h3>
+    <div class="image"></div>
+    <div class="image attatchment-scroll">
+      <h3>scroll</h3>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus fuga ex
+      voluptates! Repudiandae quod labore in doloribus ullam ea dolor pariatur,
+      nesciunt fuga amet similique. Voluptas cupiditate cumque deserunt
+      architecto. Aliquid similique nesciunt sed rerum ea. Sunt nobis vero vitae
+      asperiores alias molestias harum nam soluta, quis dolores iure vel impedit
+      accusamus excepturi quod officiis mollitia. A modi veritatis libero. Nemo
+      nobis distinctio similique libero et, quisquam ut enim quo dolorem porro
+      delectus sint aut aliquam blanditiis veniam ipsa, deserunt voluptate ex.
+      Natus repudiandae dolorem, tempore tempora ipsa exercitationem at! Omnis
+      doloremque corporis esse. Non debitis sed suscipit perferendis corporis
+      atque et natus soluta blanditiis nobis vitae cupiditate, minus autem
+      aliquam labore odio vero nam id doloremque quam laboriosam? Dolorum!
+      Facere ab sequi, perferendis, nesciunt ipsa distinctio asperiores, laborum
+      numquam earum non voluptates maxime odit tenetur hic architecto eaque
+      veritatis nam exercitationem. Asperiores sequi iusto dignissimos quasi,
+      vel et ipsam? Quisquam nostrum deserunt illum voluptatum sed. Impedit
+      porro laborum quidem officiis aut, laboriosam, omnis quasi alias cum ea,
+      quae facilis maxime fuga atque incidunt. Nisi adipisci possimus
+      consequuntur recusandae ab! Sapiente quo officia recusandae ut accusamus,
+      natus quibusdam vel corporis delectus repudiandae blanditiis iure iste id
+      placeat! Quaerat suscipit sunt repellendus ut modi aperiam in et, quas
+      eius totam illo. Facilis, ex eligendi ipsum odit quidem accusantium
+      magnam! Molestiae amet quia, facere recusandae possimus officiis cumque
+      atque expedita, ducimus minus nulla nemo iusto dolorum veritatis
+      repellendus fugiat dolor eius reiciendis?
+    </div>
+    <div class="image attatchment-fixed">
+      <h3>fixed</h3>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus fuga ex
+      voluptates! Repudiandae quod labore in doloribus ullam ea dolor pariatur,
+      nesciunt fuga amet similique. Voluptas cupiditate cumque deserunt
+      architecto. Aliquid similique nesciunt sed rerum ea. Sunt nobis vero vitae
+      asperiores alias molestias harum nam soluta, quis dolores iure vel impedit
+      accusamus excepturi quod officiis mollitia. A modi veritatis libero. Nemo
+      nobis distinctio similique libero et, quisquam ut enim quo dolorem porro
+      delectus sint aut aliquam blanditiis veniam ipsa, deserunt voluptate ex.
+      Natus repudiandae dolorem, tempore tempora ipsa exercitationem at! Omnis
+      doloremque corporis esse. Non debitis sed suscipit perferendis corporis
+      atque et natus soluta blanditiis nobis vitae cupiditate, minus autem
+      aliquam labore odio vero nam id doloremque quam laboriosam? Dolorum!
+      Facere ab sequi, perferendis, nesciunt ipsa distinctio asperiores, laborum
+      numquam earum non voluptates maxime odit tenetur hic architecto eaque
+      veritatis nam exercitationem. Asperiores sequi iusto dignissimos quasi,
+      vel et ipsam? Quisquam nostrum deserunt illum voluptatum sed. Impedit
+      porro laborum quidem officiis aut, laboriosam, omnis quasi alias cum ea,
+      quae facilis maxime fuga atque incidunt. Nisi adipisci possimus
+      consequuntur recusandae ab! Sapiente quo officia recusandae ut accusamus,
+      natus quibusdam vel corporis delectus repudiandae blanditiis iure iste id
+      placeat! Quaerat suscipit sunt repellendus ut modi aperiam in et, quas
+      eius totam illo. Facilis, ex eligendi ipsum odit quidem accusantium
+      magnam! Molestiae amet quia, facere recusandae possimus officiis cumque
+      atque expedita, ducimus minus nulla nemo iusto dolorum veritatis
+      repellendus fugiat dolor eius reiciendis?
+    </div>
+
+    <div class="image attatchment-local">
+      <h3>local</h3>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus fuga ex
+      voluptates! Repudiandae quod labore in doloribus ullam ea dolor pariatur,
+      nesciunt fuga amet similique. Voluptas cupiditate cumque deserunt
+      architecto. Aliquid similique nesciunt sed rerum ea. Sunt nobis vero vitae
+      asperiores alias molestias harum nam soluta, quis dolores iure vel impedit
+      accusamus excepturi quod officiis mollitia. A modi veritatis libero. Nemo
+      nobis distinctio similique libero et, quisquam ut enim quo dolorem porro
+      delectus sint aut aliquam blanditiis veniam ipsa, deserunt voluptate ex.
+      Natus repudiandae dolorem, tempore tempora ipsa exercitationem at! Omnis
+      doloremque corporis esse. Non debitis sed suscipit perferendis corporis
+      atque et natus soluta blanditiis nobis vitae cupiditate, minus autem
+      aliquam labore odio vero nam id doloremque quam laboriosam? Dolorum!
+      Facere ab sequi, perferendis, nesciunt ipsa distinctio asperiores, laborum
+      numquam earum non voluptates maxime odit tenetur hic architecto eaque
+      veritatis nam exercitationem. Asperiores sequi iusto dignissimos quasi,
+      vel et ipsam? Quisquam nostrum deserunt illum voluptatum sed. Impedit
+      porro laborum quidem officiis aut, laboriosam, omnis quasi alias cum ea,
+      quae facilis maxime fuga atque incidunt. Nisi adipisci possimus
+      consequuntur recusandae ab! Sapiente quo officia recusandae ut accusamus,
+      natus quibusdam vel corporis delectus repudiandae blanditiis iure iste id
+      placeat! Quaerat suscipit sunt repellendus ut modi aperiam in et, quas
+      eius totam illo. Facilis, ex eligendi ipsum odit quidem accusantium
+      magnam! Molestiae amet quia, facere recusandae possimus officiis cumque
+      atque expedita, ducimus minus nulla nemo iusto dolorum veritatis
+      repellendus fugiat dolor eius reiciendis?
+    </div>
+    <!-- <div style="height: 1000px; width: 10px; background-color: red"></div> -->
+    <h3>background-size</h3>
+    <div class="background-size"></div>
+    <h3>linear-gradient</h3>
+    <div class="linear-gradient"></div>
+    <h3>radius-gradient</h3>
+    <div class="radius-gradient"></div>
+  </body>
+</html>

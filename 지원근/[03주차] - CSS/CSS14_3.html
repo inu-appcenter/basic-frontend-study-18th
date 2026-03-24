@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex-item</title>
+  </head>
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+    .flex-container {
+      background-color: blue;
+      height: 100vh;
+      display: flex;
+    }
+    .flex-item {
+      color: white;
+      width: 60px;
+      height: 60px;
+      background-color: red;
+      text-align: center;
+      border: 1px solid black;
+    }
+    .item1 {
+      /* flex-grow: 1; */
+      /* flex-basis: 160px; */
+      align-self: flex-end;
+    }
+    .item2 {
+      /* flex-grow: 2; */
+      /* flex-basis: 50%; */
+      align-self: flex-end;
+    }
+    .item3 {
+      /* flex-grow: 1; */
+      align-self: flex-end;
+    }
+    .item4 {
+      /* flex-grow: 1; */
+      align-self: flex-end;
+    }
+    .item5 {
+      /* flex-grow: 1; */
+      align-self: flex-end;
+    }
+  </style>
+  <body>
+    <div class="flex-container">
+      <div class="flex-item item1">1</div>
+      <div class="flex-item item2">2</div>
+      <div class="flex-item item3">3</div>
+      <div class="flex-item item4">4</div>
+      <div class="flex-item item5">5</div>
+    </div>
+  </body>
+</html>

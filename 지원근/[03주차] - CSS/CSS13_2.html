@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media query</title>
+  </head>
+  <style>
+    /* 
+    min-width - 최소 width가 이상일 때 적용
+    max-width - 최대 width가 이하일 때 적용
+    0-400ox
+    401-600px
+    600 ~ 
+    */
+    @media (max-width: 400px) {
+      body {
+        background-color: red;
+      }
+    }
+    @media (min-width: 401px) and (max-width: 600px) {
+      body {
+        background-color: blue;
+      }
+    }
+    @media (min-width: 601px) {
+      body {
+        background-color: brown;
+      }
+    }
+    @media print {
+      h1 {
+        font-size: 100px;
+      }
+    }
+  </style>
+  <body>
+    <h1>안녕하세요</h1>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium
+      provident culpa alias dolorum sapiente excepturi sit maiores aperiam et ex
+      quo molestiae debitis, beatae officiis, nemo, repudiandae quos? Odio,
+      laborum. Veniam, repellendus incidunt. Ad, accusantium! Hic porro
+      accusamus praesentium tenetur laboriosam aliquam ad autem repudiandae
+      voluptates, sit eveniet pariatur amet harum ullam odio, distinctio
+      delectus possimus recusandae omnis, incidunt natus? Perferendis, amet a
+      porro, quaerat consequatur delectus ullam dolor quod, eligendi quas nemo
+      vitae. Id maxime repellat consequatur, asperiores eligendi fugit minima
+      placeat qui nihil nisi saepe vel amet! Facilis. Vel omnis quibusdam
+      tenetur laudantium aut delectus nostrum. Facere debitis libero est optio
+      natus voluptatem rerum minus ea tempora. Optio repellat ullam accusantium
+      quae! Tenetur eaque blanditiis unde beatae sapiente?
+    </p>
+  </body>
+</html>
