@@ -1,3 +1,2 @@
-let name = "주민서";
-let intro = `제 이름은 ${name} 입니다.`;
-console.log(intro);
+let num = 100;
+let result = num % 2 === 0 ? "짝수" : "홀수";
