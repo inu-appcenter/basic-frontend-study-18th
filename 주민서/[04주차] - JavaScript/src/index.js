@@ -1,6 +1,6 @@
-const testfunc = (callback) => {
-  callback();
+let car = {
+  name: "붕붕",
+  model: "morning",
+  color: "black",
 };
-testfunc(() => {
-  console.log("콜백 함수 테스트");
-});
+console.log(객체.프로퍼티);
