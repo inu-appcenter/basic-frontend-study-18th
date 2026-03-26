@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>container</title>
+  </head>
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+    .flex-container {
+      background-color: blue;
+      height: 100vh;
+      display: flex;
+      /* flex-direction: row;
+      flex-wrap: wrap-reverse; */
+      flex-flow: row wrap;
+      /* justify-content: space-around; 가로정렬*/
+      /* align-content: space-between; 세로정렬 */
+
+      /* align-items: center; 콘텐츠와 다른 점은 라인을 기준으로 정렬*/
+    }
+    .flex-item {
+      color: white;
+      width: 60px;
+      height: 60px;
+      background-color: red;
+      text-align: center;
+      border: 1px solid black;
+    }
+  </style>
+  <body>
+    <div class="flex-container">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item">4</div>
+      <div class="flex-item">5</div>
+      <div class="flex-item">6</div>
+      <div class="flex-item">7</div>
+      <div class="flex-item">8</div>
+      <div class="flex-item">9</div>
+      <div class="flex-item">10</div>
+      <div class="flex-item">11</div>
+      <div class="flex-item">1 2</div>
+      <div class="flex-item">13</div>
+      <div class="flex-item">14</div>
+      <div class="flex-item">15</div>
+    </div>
+  </body>
+</html>

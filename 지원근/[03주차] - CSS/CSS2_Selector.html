@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selector_Css</title>
+  </head>
+  <style>
+    /* * {
+      margin: 10;
+      padding: 10;
+    } */
+    /* h2 {
+      text-align: center;
+      color: skyblue;
+    }
+    p {
+      color: grey;
+      text-align: center;
+    }
+    .hello {
+      color: greenyellow;
+      font-size: 1000;
+    }
+    .title {
+      color: blue;
+      font-size: 23;
+    }
+    /* #real_title {
+      color: blueviolet;
+      font-size: 50px;
+      text-align: center;
+    }
+    그룹선택자
+    h1,
+    h2 {
+      color: green;
+      text-align: center;
+
+    }*/
+    /* 자손결합자 */
+    section ul {
+      color: blue;
+    }
+    /* 자식결합자 */
+    section > ul > li {
+      color: aqua;
+    }
+    /* 일반 형제 결합자 */
+    p ~ span {
+      color: blue;
+    }
+
+    /* 인접 형제 결합자 */
+    h1 + span {
+      color: red;
+    }
+    .example + span {
+      color: sienna;
+    }
+  </style>
+  <body>
+    <!-- <h1 id="real_title">예시문장</h1>
+    <h2>첫째줄</h2>
+    <p>
+      <span class="hello">안녕하세요!</span> 이곳은 새롭게 만들어지고 있는
+      웹사이트의 공간입니다. 현재<br />
+      <span class="title">HTML</span>과 <span class="title">CSS</span>를
+      활용하여 다양한 화면 구성과 디자인을 테스트하고 있습니다.
+      <br />
+    </p>
+    <h2>둘째줄</h2>
+    <p>
+      기본 웹 표준을 준수하며, 어떤 환경에서도 잘 보일 수 있도록 다듬어나갈<br />
+      예정입니다. 아직 완성되지 않은 부분도 많지만, 점차 유익하고 풍성한<br />
+      콘텐츠로 채워나갈 계획입니다.<br />
+    </p>
+    <h2>셋째줄</h2>
+    <p>
+      현재 보고 계신 이 텍스트는 화면 구성을 확인하기 위해 임시로 작성된<br />
+      내용입니다. 방문자분들께 더 나은 경험을 제공하기 위해 직관적이고 깔끔한<br />
+      구조를 고민 중입니다. 앞으로 이 공간이 어떻게 발전하고 완성되어 갈지
+      많은<br />
+      기대와 관심 부탁드립니다!<br />
+    </p> -->
+    <section>
+      <h1>헬스</h1>
+      <hr />
+      <p>위키백과, 우리 모두의 백과사전</p>
+      <p>
+        헬스(health)는 기본적으로 건강을 가리키며, 대한민국에서는 근력
+        트레이닝이나 웨이트 트레이닝을 의미하기도 한다. 그 외에 다음을 가리킨다.
+      </p>
+      <ul>
+        <li>의료</li>
+        <li><span>보건</span></li>
+        <li>체력</li>
+        <li>패션헬스(fashion health)</li>
+        <li>헬스클럽(health club)</li>
+        <li>구글헬스</li>
+      </ul>
+    </section>
+    <section>
+      <h1>제목</h1>
+      <span>이건 빨강이 아닙니다.</span>
+      <p>여긴 문단이 있습니다.</p>
+      <span>이제 빨강이 됐어요.</span>
+      <code class="example">이건 코드가 있는 곳입니다.</code>
+      <span>이것도 빨강입니다.</span>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>position</title>
+  </head>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+    main,
+    section,
+    article,
+    div {
+      border: 1px solid black;
+      padding: 20px;
+    }
+    main {
+      /* 최대 크기를 600으로 제한 */
+      max-width: 600px;
+      /* 상하 마진은 0 좌우는 오토 */
+      margin: 0 auto;
+      background-color: gray;
+    }
+    section {
+      background-color: aqua;
+    }
+    article {
+      background-color: violet;
+      position: relative;
+    }
+    div {
+      background-color: beige;
+    }
+    div.relative {
+      /* static과 속성흐름에 따라 배치되는 것은 같으나, 
+      차이점은 right left top bottom을 지정할 수 있음 */
+      position: relative;
+      /* top: 10px;
+      right: 10px; */
+      bottom: 100px;
+      z-index: 1;
+    }
+    div.absolute {
+      position: absolute;
+      background-color: gold;
+      top: 0px;
+      left: 0px;
+      /* 배치가 겹치게 되면 무엇이 우선적으로 앞으로 올지 지정 수가 클 수록 우선순위 */
+      z-index: 2;
+    }
+    div.fixed {
+      position: fixed;
+      background-color: brown;
+      bottom: 10px;
+      right: 10px;
+    }
+    div.sticky {
+      position: sticky;
+      top: 100px;
+      background-color: blue;
+    }
+  </style>
+  <body>
+    <main>
+      main
+      <section>
+        section
+        <article>
+          article
+          <div>static</div>
+          <div class="relative">relative</div>
+          <div class="absolute">absolute</div>
+          <div class="fixed">fixed</div>
+          <div class="sticky">sticky</div>
+          <div style="height: 1000px"></div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
