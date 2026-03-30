@@ -1,6 +1,6 @@
-let car = {
-  name: "붕붕",
-  model: "morning",
-  color: "black",
+const print = (...rest) => {
+  console.log(rest);
 };
-console.log(객체.프로퍼티);
+
+const numbers = [1, 2, 3, 4, 5, 6];
+print(...numbers);
