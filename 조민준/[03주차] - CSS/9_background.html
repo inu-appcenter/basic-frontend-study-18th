@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background</title>
+    <style>
+      .red {
+        background-color: red;
+        width: 120px;
+        height: 120px;
+      }
+      .image {
+        background-image: url('../assets/images/cat-1.jpg');
+        background-repeat: repeat;
+        background-position: center;
+        width: 200px;
+        height: 400px;
+        border: 1px solid black;
+        display: inline-block;
+        overflow-y: scroll;
+      }
+      .attachment-scroll {
+        background-attachment: scroll;
+      }
+      .attachment-fixed {
+        background-attachment: fixed;
+      }
+      .attachment-local {
+        background-attachment: local;
+      }
+      .background-size {
+        width: 300px;
+        height: 300px;
+        background-image: url('../assets/images/bird.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border: 1px solid black;
+      }
+      .linear-gradient {
+        width: 300px;
+        height: 200px;
+        border: 1px solid red;
+        background: linear-gradient(45deg, red 50%, blue 80%, yellow 100%);
+      }
+      .radial-gradient {
+        width: 500px;
+        height: 200px;
+        border: 1px solid blue;
+        background: radial-gradient(
+          circle at 10% 50%,
+          white,
+          yellow,
+          red,
+          blue
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Background-Color</h3>
+    <div class="red"></div>
+
+    <h3>Background-Image</h3>
+    <div class="image attachment-scroll">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae,
+      explicabo, magni rerum consectetur dignissimos aliquid possimus nostrum
+      cumque, libero fugiat fugit in amet quisquam quod maxime consequatur
+      quaerat. Magnam, accusantium. Iste architecto aut dolore voluptatem
+      delectus provident consequuntur praesentium maiores in minima hic aperiam
+      corrupti nulla quo, distinctio sapiente magnam sit earum est odit? Iure
+      animi quaerat nostrum tempora repellat? Repudiandae repellat, magnam
+      tempore asperiores sequi recusandae reprehenderit ipsum dolorum quae harum
+      est ratione eos nisi iste ea? Provident rem rerum dolore velit placeat
+      autem debitis maiores aut quaerat ea! Sapiente at fugiat doloribus tempore
+      mollitia, nemo quis! Beatae eligendi nisi veritatis deserunt,
+      reprehenderit illo vero ea delectus expedita pariatur aliquam? Voluptatum
+      nulla unde laudantium eum, quaerat vitae laborum nam? Tempore aut eos
+      ducimus accusantium voluptate necessitatibus magnam dolor odit id amet
+      nobis ab enim, natus ipsum, explicabo qui possimus. Fugit, a? Repellat,
+      ratione veniam laborum molestiae repellendus odio dolor. Nihil officiis
+      modi nulla consectetur, ipsam fugiat quisquam voluptatem deserunt a maxime
+      eaque suscipit error facilis quae nobis voluptas nesciunt veritatis
+      voluptates cum. Soluta voluptatem debitis tenetur architecto, mollitia
+      vitae! Veniam ipsa ab veritatis fugiat modi, ea sapiente itaque sunt
+      adipisci placeat vero quasi perferendis magni aspernatur doloribus, esse
+      beatae provident corporis? Quibusdam vel qui nostrum sequi quam assumenda
+      eius. Perferendis perspiciatis ex cumque neque maxime praesentium, cum
+      culpa! Accusamus, architecto nam, aliquid dignissimos quidem culpa labore,
+      totam itaque ea quisquam quis veniam. Eos illum eum mollitia quod expedita
+      quis.
+    </div>
+    <div class="image attachment-fixed">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae,
+      explicabo, magni rerum consectetur dignissimos aliquid possimus nostrum
+      cumque, libero fugiat fugit in amet quisquam quod maxime consequatur
+      quaerat. Magnam, accusantium. Iste architecto aut dolore voluptatem
+      delectus provident consequuntur praesentium maiores in minima hic aperiam
+      corrupti nulla quo, distinctio sapiente magnam sit earum est odit? Iure
+      animi quaerat nostrum tempora repellat? Repudiandae repellat, magnam
+      tempore asperiores sequi recusandae reprehenderit ipsum dolorum quae harum
+      est ratione eos nisi iste ea? Provident rem rerum dolore velit placeat
+      autem debitis maiores aut quaerat ea! Sapiente at fugiat doloribus tempore
+      mollitia, nemo quis! Beatae eligendi nisi veritatis deserunt,
+      reprehenderit illo vero ea delectus expedita pariatur aliquam? Voluptatum
+      nulla unde laudantium eum, quaerat vitae laborum nam? Tempore aut eos
+      ducimus accusantium voluptate necessitatibus magnam dolor odit id amet
+      nobis ab enim, natus ipsum, explicabo qui possimus. Fugit, a? Repellat,
+      ratione veniam laborum molestiae repellendus odio dolor. Nihil officiis
+      modi nulla consectetur, ipsam fugiat quisquam voluptatem deserunt a maxime
+      eaque suscipit error facilis quae nobis voluptas nesciunt veritatis
+      voluptates cum. Soluta voluptatem debitis tenetur architecto, mollitia
+      vitae! Veniam ipsa ab veritatis fugiat modi, ea sapiente itaque sunt
+      adipisci placeat vero quasi perferendis magni aspernatur doloribus, esse
+      beatae provident corporis? Quibusdam vel qui nostrum sequi quam assumenda
+      eius. Perferendis perspiciatis ex cumque neque maxime praesentium, cum
+      culpa! Accusamus, architecto nam, aliquid dignissimos quidem culpa labore,
+      totam itaque ea quisquam quis veniam. Eos illum eum mollitia quod expedita
+      quis.
+    </div>
+    <div class="image attachment-local">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae,
+      explicabo, magni rerum consectetur dignissimos aliquid possimus nostrum
+      cumque, libero fugiat fugit in amet quisquam quod maxime consequatur
+      quaerat. Magnam, accusantium. Iste architecto aut dolore voluptatem
+      delectus provident consequuntur praesentium maiores in minima hic aperiam
+      corrupti nulla quo, distinctio sapiente magnam sit earum est odit? Iure
+      animi quaerat nostrum tempora repellat? Repudiandae repellat, magnam
+      tempore asperiores sequi recusandae reprehenderit ipsum dolorum quae harum
+      est ratione eos nisi iste ea? Provident rem rerum dolore velit placeat
+      autem debitis maiores aut quaerat ea! Sapiente at fugiat doloribus tempore
+      mollitia, nemo quis! Beatae eligendi nisi veritatis deserunt,
+      reprehenderit illo vero ea delectus expedita pariatur aliquam? Voluptatum
+      nulla unde laudantium eum, quaerat vitae laborum nam? Tempore aut eos
+      ducimus accusantium voluptate necessitatibus magnam dolor odit id amet
+      nobis ab enim, natus ipsum, explicabo qui possimus. Fugit, a? Repellat,
+      ratione veniam laborum molestiae repellendus odio dolor. Nihil officiis
+      modi nulla consectetur, ipsam fugiat quisquam voluptatem deserunt a maxime
+      eaque suscipit error facilis quae nobis voluptas nesciunt veritatis
+      voluptates cum. Soluta voluptatem debitis tenetur architecto, mollitia
+      vitae! Veniam ipsa ab veritatis fugiat modi, ea sapiente itaque sunt
+      adipisci placeat vero quasi perferendis magni aspernatur doloribus, esse
+      beatae provident corporis? Quibusdam vel qui nostrum sequi quam assumenda
+      eius. Perferendis perspiciatis ex cumque neque maxime praesentium, cum
+      culpa! Accusamus, architecto nam, aliquid dignissimos quidem culpa labore,
+      totam itaque ea quisquam quis veniam. Eos illum eum mollitia quod expedita
+      quis.
+    </div>
+    <h3>Background-Size</h3>
+    <div class="background-size"></div>
+    <h3>linear-gradient</h3>
+    <div class="linear-gradient"></div>
+    <h3>radial-gradient</h3>
+    <div class="radial-gradient"></div>
+    <div style="height: 1000px; width: 10px; background-color: red"></div>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <style>
+      #movies {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      #movies td,
+      #movies th {
+        border: 1px solid rgb(73, 73, 73);
+        padding: 8px;
+      }
+      #movies th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: green;
+        color: white;
+      }
+      #movies tr:nth-child(even) {
+        background-color: rgb(190, 190, 190);
+      }
+      #movies tr:hover {
+        background-color: rgb(163, 163, 163);
+      }
+    </style>
+  </head>
+  <body>
+    <table id="movies">
+      <tr>
+        <th>영화</th>
+        <th>상영시간</th>
+        <th>개봉</th>
+      </tr>
+      <tr>
+        <td>블랙핑크 더 무비</td>
+        <td>100분</td>
+        <td>2021.08.04</td>
+      </tr>
+      <tr>
+        <td>어벤져스: 엔드게임</td>
+        <td>181분</td>
+        <td>2021.04.26</td>
+      </tr>
+      <tr>
+        <td>스타워즈: 클론의 타격</td>
+        <td>142분</td>
+        <td>2021.05.24</td>
+      </tr>
+      <tr>
+        <td>정글 크루즈</td>
+        <td>120분</td>
+        <td>2021.07.12</td>
+      </tr>
+      <tr>
+        <td>보스 베이비2</td>
+        <td>107분</td>
+        <td>2021.07.28</td>
+      </tr>
+      <tr>
+        <td>더 수어사이드 스쿼드</td>
+        <td>132분</td>
+        <td>2021.08.04</td>
+      </tr>
+      <tr>
+        <td>블랙 위도우</td>
+        <td>134분</td>
+        <td>2021.07.07</td>
+      </tr>
+    </table>
+  </body>
+</html>
