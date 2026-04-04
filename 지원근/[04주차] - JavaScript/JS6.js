@@ -35,7 +35,7 @@ console.log(idx1);
 //filter 내장함수는 조건을 만족하는 모든 함수를 반환함
 let filterArray = starbucks.filter((elm, idx, array) => elm.id > 0);
 //console.log(filterArray);
-//slice
+//slice(begin, end) 배열의 begin번째부터 end-1번째까지에 해당하는 요소들 출력
 
 let sliceArray = starbucks.slice(1, 3);
 console.log(sliceArray);
