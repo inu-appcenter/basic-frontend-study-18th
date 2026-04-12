@@ -5,7 +5,8 @@ export const request = async (startIdx, region, sortBy, searchWord) => {
   try {
     let url = `${API_URL}`;
     if (region && region !== "All") {
-      url += `${region}?start=${startIdx}`;
+      //region 값 존재하고,그 값이 all과 동일하지 않을때
+      url += `${region}?start=${startIdx}`; //url 뒷쪽에 지역명을 적고 startIdx을 매개변수에 대입
     } else {
       url += `?start=${startIdx}`;
     }
