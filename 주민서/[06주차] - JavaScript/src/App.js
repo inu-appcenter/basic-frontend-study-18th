@@ -91,9 +91,10 @@ export default function App($app) {
       $app,
       initialState: this.state.region,
       handleRegion: async (region) => {
-        history.pushState(null, null, `/${region}?sort=total`);
-        const cities = await request(0, region, "total");
+        history.pushState(null, null, `/${region}?sort=total`); // 페이지 이동
+        const cities = await request(0, region, "total"); //선택된 도시 리스트들을 나타내기 위해 선언
         this.setState({
+          //리전 초기 상태값 알맞게 업데이트
           ...this.state,
           startIdx: 0,
           sortBy: "total",
@@ -172,21 +173,23 @@ export default function App($app) {
   const renderCityDetail = async (cityId) => {
     try {
       const cityDetailData = await requestCityDetail(cityId);
-      new CityDetail({ $app, initialState: cityDetailData });
+      new CityDetail({ $app, initialState: cityDetailData }); //initialState 역할: API 호출의 결과 값 전달
     } catch (error) {
       console.log(error);
     }
   };
-
+  // 조건부 렌더링
   const render = async () => {
     const path = this.state.currentPage;
     $app.innerHTML = "";
     // 상세 페이지로 이동
     if (path.startsWith("/city/")) {
-      const cityId = path.split("/city/")[1];
+      //path가 /city/로 시작한다면 ↓↓
+      const cityId = path.split("/city/")[1]; //city id 가져오기
       renderHeader();
       renderCityDetail(cityId);
     } else {
+      //메인 컴포넌트 출력
       renderHeader();
       renderRegionList();
       renderCityList();
@@ -220,11 +223,11 @@ export default function App($app) {
   };
 
   window.addEventListener("popstate", async () => {
-    const urlPath = window.location.pathname;
+    const urlPath = window.location.pathname; //현재 페이지 url 가져오기
 
-    const prevRegion = urlPath.replace("/", "");
+    const prevRegion = urlPath.replace("/", ""); // 슬래시 공백으로변경
     const prevPage = urlPath;
-    const prevSortBy = getSortBy();
+    const prevSortBy = getSortBy(); //현재 정렬기준값 가져오기
     const prevSearchWord = getSearchWord();
     const prevStartIdx = 0;
     const prevCities = await request(
@@ -235,11 +238,12 @@ export default function App($app) {
     );
 
     this.setState({
+      //현재 상태 변경(안하면 화면 무반응)
       ...this.state,
       startIdx: prevStartIdx,
       sortBy: prevSortBy,
       region: prevRegion,
-      currentPage: prevPage,
+      currentPage: prevPage, // 이전 페이지가 어떤 페이지였는지 알게해줌
       searchWord: prevSearchWord,
       cities: prevCities,
     });

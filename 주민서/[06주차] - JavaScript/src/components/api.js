@@ -32,7 +32,7 @@ export const request = async (startIdx, region, sortBy, searchWord) => {
 //DETAIL API
 export const requestCityDetail = async (cityId) => {
   try {
-    const response = await fetch(`${API_URL}city/${cityId}`);
+    const response = await fetch(`${API_URL}city/${cityId}`); //기존 api url에 city/${cityId} 추가
     if (response) {
       let data = await response.json();
       console.log(data);

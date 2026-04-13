@@ -15,7 +15,8 @@ export default function CityDetail({ $app, initialState }) {
     let cityData = this.state.cityDetail;
     let temp = ``;
     if (cityData) {
-      temp = `<div class="image-banner">
+      //상세 페이지 마크업
+      temp = `<div class="image-banner"> 
                 <img src="${cityData.image}" />
                 <div class="city-name">
                     <div class="city">${cityData.city}</div>               
