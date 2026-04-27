@@ -10,13 +10,9 @@
 
 ## 👫 파트원
 
-|                                                           박성진                                                           |                                                              박소윤                                                              |                                                           조민준                                                            |
+|                                                           박성진                                                           |                                                              주민서                                                              |                                                           조민준                                                            |
 | :------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------: |
-| <a href="https://github.com/PARK-SJ0606"><img src="https://avatars.githubusercontent.com/u/266059998?v=4" width="120"></a> | <a href="https://github.com/dorothy040120-cmd"><img src="https://avatars.githubusercontent.com/u/227105416?v=4" width="120"></a> | <a href="https://github.com/jominjoon302"><img src="https://avatars.githubusercontent.com/u/266805350?v=4" width="120"></a> |
-
-|                                                     주민서                                                      |                                                     지원근                                                      |     |
-| :-------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------: | :-: |
-| <a href="https://github.com/wnmxeo"><img src="https://avatars.githubusercontent.com/u/266900286?v=4" width="120"></a> | <a href="https://github.com/jigooiswon"><img src="https://avatars.githubusercontent.com/u/266765839?v=4" width="120"></a> |     |
+| <a href="https://github.com/PARK-SJ0606"><img src="https://avatars.githubusercontent.com/u/266059998?v=4" width="120"></a> | <a href="https://github.com/wnmxeo"><img src="https://avatars.githubusercontent.com/u/266900286?v=4" width="120"></a> | <a href="https://github.com/jominjoon302"><img src="https://avatars.githubusercontent.com/u/266805350?v=4" width="120"></a> |
 
 
 ## 커리큘럼
