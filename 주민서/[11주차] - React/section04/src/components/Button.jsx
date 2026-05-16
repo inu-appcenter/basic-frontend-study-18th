@@ -1,4 +1,4 @@
-const Button = ({ text, color, children }) => {
+const Button = ({ text, color = "Black", children }) => {
   // 이벤트 객체
   const onClickButton = (e) => {
     console.log(e);
@@ -15,10 +15,6 @@ const Button = ({ text, color, children }) => {
       {children}
     </button>
   );
-};
-
-Button.defaultProps = {
-  color: "black",
 };
 
 export default Button;
