@@ -2,7 +2,7 @@ import "./List.css";
 import TodoItem from "./TodoItem";
 import { useState } from "react";
 
-const List = ({ todos }) => {
+const List = ({ todos, onUpdate }) => {
   const [search, setSearch] = useState("");
 
   const onChangeSearch = (e) => {
@@ -13,8 +13,8 @@ const List = ({ todos }) => {
     if (search === "") {
       return todos;
     }
-    return todos.filter(
-      (todo) => todo.content.toLowerCase().includes(search.toLowerCase()), //todo content 속성안에 포함된지 확인
+    return todos.filter((todo) =>
+      todo.content.toLowerCase().includes(search.toLowerCase()),
     );
   };
 
@@ -30,8 +30,7 @@ const List = ({ todos }) => {
       />
       <div className="todos_wrapper">
         {filteredTodos.map((todo) => {
-          //검색된것만 필터링
-          return <TodoItem key={todo.id} {...todo} />;
+          return <TodoItem key={todo.id} {...todo} onUpdate={onUpdate} />;
         })}
       </div>
     </div>
