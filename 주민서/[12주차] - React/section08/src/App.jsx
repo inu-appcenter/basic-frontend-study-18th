@@ -1,51 +1,40 @@
-import "./App.css";
-import Header from "./components/Header";
-import Editor from "./components/Editor";
-import List from "./components/List";
-import { useState, useRef } from "react";
-const mockData = [
-  {
-    id: 0,
-    isDone: false,
-    content: "리액트 공부하기",
-    date: new Date().getTime(),
-  },
-  {
-    id: 1,
-    isDone: false,
-    content: "빨래하기",
-    date: new Date().getTime(),
-  },
-  {
-    id: 2,
-    isDone: false,
-    content: "노래연습하기",
-    date: new Date().getTime(),
-  },
-];
-function App() {
-  const [todos, setTodos] = useState(mockData);
-  const idRef = useRef(3);
+import "./List.css";
+import TodoItem from "./TodoItem";
+import { useState } from "react";
 
-  const onCreate = (content) => {
-    const newTodo = {
-      id: idRef.current++,
-      isDone: false,
-      content: content,
-      date: new Date().getTime(),
-    };
+const List = ({ todos }) => {
+  const [search, setSearch] = useState("");
 
-    setTodos([newTodo, ...todos]);
+  const onChangeSearch = (e) => {
+    setSearch(e.target.value);
   };
+
+  const getFilteredData = () => {
+    if (search === "") {
+      return todos;
+    }
+    return todos.filter((todo) =>
+      todo.content.toLowerCase().includes(search.toLowerCase()),
+    );
+  };
+
+  const filteredTodos = getFilteredData();
+
   return (
-    <div className="App">
-      <>
-        <Header />
-        <Editor onCreate={onCreate} />
-        <List />
-      </>
+    <div className="List">
+      <h4>Todo List 🌱</h4>
+      <input
+        value={search}
+        onChange={onChangeSearch}
+        placeholder="검색어를 입력하세요"
+      />
+      <div className="todos_wrapper">
+        {filteredTodos.map((todo) => {
+          return <TodoItem key={todo.id} {...todo} />;
+        })}
+      </div>
     </div>
   );
-}
+};
 
-export default App;
+export default List;
