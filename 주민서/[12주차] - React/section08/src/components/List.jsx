@@ -1,8 +1,11 @@
 import "./List.css";
 import TodoItem from "./TodoItem";
-import { useState, useMemo, memo } from "react";
+import { useState, useMemo, useContext } from "react";
+import { TodoContext } from "../App";
 
-const List = ({ todos, onUpdate, onDelete }) => {
+const List = () => {
+  const { todos } = useContext(TodoContext);
+
   const [search, setSearch] = useState("");
 
   const onChangeSearch = (e) => {
@@ -21,6 +24,7 @@ const List = ({ todos, onUpdate, onDelete }) => {
   const filteredTodos = getFilteredData();
 
   const { totalCount, doneCount, notDoneCount } = useMemo(() => {
+    console.log("getAnalyzedData 호출!");
     const totalCount = todos.length;
     const doneCount = todos.filter((todo) => todo.isDone).length;
     const notDoneCount = totalCount - doneCount;
@@ -48,18 +52,11 @@ const List = ({ todos, onUpdate, onDelete }) => {
       />
       <div className="todos_wrapper">
         {filteredTodos.map((todo) => {
-          return (
-            <TodoItem
-              key={todo.id}
-              {...todo}
-              onUpdate={onUpdate}
-              onDelete={onDelete}
-            />
-          );
+          return <TodoItem key={todo.id} {...todo} />;
         })}
       </div>
     </div>
   );
 };
 
-export default memo(List);
+export default List;
