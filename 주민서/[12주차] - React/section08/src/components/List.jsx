@@ -1,6 +1,6 @@
 import "./List.css";
 import TodoItem from "./TodoItem";
-import { useState, useMemo } from "react";
+import { useState, useMemo, memo } from "react";
 
 const List = ({ todos, onUpdate, onDelete }) => {
   const [search, setSearch] = useState("");
@@ -62,4 +62,4 @@ const List = ({ todos, onUpdate, onDelete }) => {
   );
 };
 
-export default List;
+export default memo(List);
