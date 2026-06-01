@@ -2,7 +2,7 @@ import "./App.css";
 import Viewer from "./components/Viewer";
 import Controller from "./components/Controller";
 import { useEffect, useState } from "react";
-
+import Exam from "../../section08/src/components/ex";
 function App() {
   const [count, setCount] = useState(0);
 

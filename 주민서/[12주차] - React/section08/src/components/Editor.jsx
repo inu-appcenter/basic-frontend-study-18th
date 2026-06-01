@@ -1,7 +1,9 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useContext } from "react";
 import "./Editor.css";
+import { TodoDispatchContext } from "../App";
 
-const Editor = ({ onCreate }) => {
+const Editor = () => {
+  const { onCreate } = useContext(TodoDispatchContext);
   const [content, setContent] = useState("");
   const inputRef = useRef();
 
@@ -11,18 +13,17 @@ const Editor = ({ onCreate }) => {
 
   const onKeydown = (e) => {
     if (e.keyCode === 13) {
-      //엔터 누르면 onSubmit 발동
       onSubmit();
     }
   };
 
   const onSubmit = () => {
     if (content === "") {
-      inputRef.current.focus(); //빈 추가 눌럿을때 입력하라고 focus
+      inputRef.current.focus();
       return;
     }
     onCreate(content);
-    setContent(""); //추가한뒤 인풋 초기화
+    setContent("");
   };
 
   return (
